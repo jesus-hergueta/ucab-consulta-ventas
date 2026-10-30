@@ -1,0 +1,10 @@
+{
+  "framework": "astro",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "functions": {
+    "api/pregunta.js": {
+      "maxDuration": 60
+    }
+  }
+}

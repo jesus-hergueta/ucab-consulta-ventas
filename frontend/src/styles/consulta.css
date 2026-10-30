@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100svh;
+  padding: 32px 20px;
+  display: grid;
+  place-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #232834;
+  background-color: #edf0f6;
+  background-image:
+    radial-gradient(ellipse at 15% 20%, #d1dff4 0%, transparent 47%),
+    radial-gradient(ellipse at 86% 85%, #e3d7ef 0%, transparent 48%),
+    radial-gradient(ellipse at 80% 12%, #f7faff 0%, transparent 50%);
+}
+.tarjeta {
+  width: min(100%, 700px);
+  padding: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 30px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.74),
+    rgba(255, 255, 255, 0.4)
+  );
+  box-shadow:
+    0 24px 70px -30px #51627b66,
+    inset 0 1px 1px #fff;
+  backdrop-filter: blur(28px) saturate(140%);
+  -webkit-backdrop-filter: blur(28px) saturate(140%);
+}
+.etiqueta {
+  display: block;
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #647087;
+}
+.escritura {
+  position: relative;
+  border: 1px solid #ffffffd9;
+  border-radius: 20px;
+  background: #ffffff80;
+  box-shadow:
+    inset 0 1px 4px #74839b0b,
+    0 2px 8px #5e719008;
+}
+.escritura:focus-within {
+  border-color: #9eacc780;
+  box-shadow: 0 0 0 3px #ffffff60;
+}
+textarea {
+  display: block;
+  width: 100%;
+  min-height: 140px;
+  resize: vertical;
+  border: 0;
+  outline: 0;
+  padding: 19px 20px 60px;
+  border-radius: 20px;
+  font: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  color: inherit;
+  background: transparent;
+}
+textarea::placeholder {
+  color: #7c8595;
+}
+.enviar {
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+  width: 37px;
+  height: 37px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid #ffffffa8;
+  border-radius: 50%;
+  color: white;
+  background: #303c52;
+  box-shadow:
+    0 3px 8px #27344b24,
+    inset 0 1px 1px #ffffff38;
+  cursor: pointer;
+}
+.enviar:hover {
+  background: #43536e;
+}
+.sugerencias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 15px;
+}
+.sugerencias button {
+  padding: 7px 11px;
+  border: 1px solid #ffffffb8;
+  border-radius: 99px;
+  background: #ffffff47;
+  color: #536075;
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+  box-shadow:
+    0 1px 3px #53607808,
+    inset 0 1px 0 #ffffff80;
+  transition: background 0.15s;
+}
+.sugerencias button:hover {
+  background: #ffffffc2;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #6788ba;
+  outline-offset: 3px;
+}
+#estado {
+  margin: 12px 0 0;
+  color: #667186;
+  font-size: 12px;
+}
+#estado:empty {
+  display: none;
+}
+#resultado {
+  margin-top: 26px;
+  padding-top: 20px;
+  border-top: 1px solid #ffffffb8;
+  max-height: 48svh;
+  overflow: auto;
+}
+#respuesta {
+  margin: 0 0 18px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+  line-height: 1.75;
+}
+.periodo {
+  font-size: 11px;
+  color: #647087;
+  margin: -8px 0 18px;
+  line-height: 1.7;
+}
+.periodo:empty {
+  display: none;
+}
+.formula {
+  margin: 18px 0;
+  padding: 13px 16px;
+  background: #ffffff70;
+  border: 1px solid #ffffffb8;
+  border-radius: 14px;
+  overflow-x: auto;
+  font-size: 12px;
+}
+.tabla {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+th,
+td {
+  padding: 9px 10px;
+  text-align: left;
+  border-bottom: 1px solid #ffffffb8;
+  white-space: nowrap;
+}
+th {
+  color: #647087;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+details {
+  font-size: 12px;
+  color: #647087;
+}
+summary {
+  cursor: pointer;
+  width: fit-content;
+}
+#advertencias {
+  line-height: 1.6;
+}
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 11px;
+  line-height: 1.6;
+  background: #ffffff50;
+  padding: 12px;
+  border-radius: 12px;
+}
+[hidden] {
+  display: none !important;
+}
+@media (max-width: 480px) {
+  body {
+    padding: 18px 14px;
+  }
+  .tarjeta {
+    padding: 24px 20px;
+    border-radius: 25px;
+  }
+  .sugerencias {
+    gap: 6px;
+  }
+  #resultado {
+    max-height: 43svh;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sugerencias button {
+    transition: none;
+  }
+}

@@ -1,0 +1,6 @@
+project_id = "consulta-ventas"
+
+[functions.asistente]
+enabled = true
+verify_jwt = false
+entrypoint = "./functions/asistente/index.ts"

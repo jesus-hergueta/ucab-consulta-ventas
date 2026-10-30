@@ -1,0 +1,4 @@
+sk_canal,nk_codigo_canal,nombre_canal,tipo_canal,comision_canal_pct
+1,CA-001,Tienda,Presencial,0
+2,CA-002,Web,Digital,2
+3,CA-003,WhatsApp,Digital,1

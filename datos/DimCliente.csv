@@ -1,0 +1,8 @@
+sk_cliente,nk_id_cliente,nombre_cliente,segmento,tipo_cliente,ciudad_cliente,fecha_inicio_vigencia,fecha_fin_vigencia,es_actual
+1,C-001,Ana Perez,Minorista,Persona,Caracas,2026-06-01,,true
+2,C-002,Luis Rojas,Minorista,Persona,Valencia,2026-06-01,,true
+3,C-003,Libreria Central,Mayorista,Empresa,Caracas,2026-06-01,,true
+4,C-004,Oficinas del Centro,Mayorista,Empresa,Maracay,2026-06-01,,true
+5,C-005,Carla Diaz,Preferencial,Persona,Valencia,2026-06-01,,true
+6,C-006,Pedro Leon,Minorista,Persona,Caracas,2026-06-01,2026-07-31,false
+7,C-006,Pedro Leon,Preferencial,Persona,Caracas,2026-08-01,,true

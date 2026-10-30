@@ -1,0 +1,4 @@
+sk_sucursal,nk_codigo_sucursal,nombre_sucursal,ciudad,region,tipo_tienda
+1,S-001,Centro Caracas,Caracas,Capital,Fisica
+2,S-002,Valencia Norte,Valencia,Central,Fisica
+3,S-003,Maracay Centro,Maracay,Central,Fisica

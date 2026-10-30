@@ -1,0 +1,9 @@
+sk_producto,nk_codigo_producto,nombre_producto,categoria,subcategoria,marca,estado_producto
+1,P-001,Laptop basica,Tecnologia,Computadoras,Nova,Activo
+2,P-002,Mouse inalambrico,Tecnologia,Accesorios,Nova,Activo
+3,P-003,Ventilador de mesa,Hogar,Ventilacion,Brisa,Activo
+4,P-004,Lampara de escritorio,Hogar,Iluminacion,Luz,Activo
+5,P-005,Resma de papel,Oficina,Papeleria,Ofipapel,Activo
+6,P-006,Detergente de un litro,Limpieza,Lavanderia,Claro,Activo
+7,P-007,Cafe de 500 gramos,Alimentos,Cafe,Sierra,Activo
+8,P-008,Agua de un litro,Bebidas,Agua,Manantial,Activo

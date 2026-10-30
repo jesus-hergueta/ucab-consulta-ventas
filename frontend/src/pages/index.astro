@@ -1,0 +1,45 @@
+---
+import "../styles/consulta.css";
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Consulta de ventas</title>
+    <meta name="description" content="Consulta los datos de ventas de forma sencilla." />
+  </head>
+  <body>
+    <main class="tarjeta">
+      <label id="titulo" class="etiqueta" for="pregunta">Que quieres saber?</label>
+      <form id="formulario">
+        <div class="escritura">
+          <textarea id="pregunta" aria-labelledby="titulo" rows="3" maxlength="1500" required placeholder="Escribe una pregunta sobre tus ventas…"></textarea>
+          <button id="enviar" class="enviar" type="submit" aria-label="Consultar" title="Consultar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5m-6 6 6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </button>
+        </div>
+        <div class="sugerencias" aria-label="Sugerencias de preguntas">
+          <button type="button" data-pregunta="¿Cuál fue el ingreso neto por mes?">Ingreso por mes</button>
+          <button type="button" data-pregunta="¿Cuáles son las cinco categorías con mayor margen bruto?">Categorías</button>
+          <button type="button" data-pregunta="¿Qué sucursal presenta el ticket promedio más alto?">Ticket promedio</button>
+          <button type="button" data-pregunta="¿Qué segmento de clientes redujo más su volumen de compra?">Caída por segmento</button>
+          <button type="button" data-pregunta="¿Qué canal concentra el mayor valor de ventas?">Canales</button>
+          <button type="button" data-pregunta="Compare el margen bruto de Web y Tienda durante los últimos tres meses disponibles.">Comparar canales</button>
+        </div>
+        <p id="estado" role="status" aria-live="polite"></p>
+      </form>
+      <section id="resultado" aria-label="Respuesta a la pregunta" hidden>
+        <p id="respuesta" aria-live="polite"></p>
+        <p id="periodo" class="periodo"></p>
+        <div id="tabla" class="tabla"></div>
+        <div id="formula" class="formula" aria-label="Regla de cálculo"></div>
+        <details id="detalle-datos"><summary>Fuente y detalle de la consulta</summary><p id="advertencias"></p><pre id="evidencia"></pre></details>
+      </section>
+    </main>
+    <script>
+      import "../lib/consulta";
+    </script>
+
+  </body>
+</html>
