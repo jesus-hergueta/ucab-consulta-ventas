@@ -14,6 +14,8 @@ En Supabase, ejecutar `Datamart.sql`, `permisos.sql`, `consultas.sql` y `trazas.
 
 La Edge Function requiere los secretos indicados en `supabase/functions/.env.example`. El servidor de Vercel usa `ASISTENTE_URL` y el mismo `ASISTENTE_TOKEN`. Las claves no se incluyen en el repositorio.
 
+Al conectar el repositorio en Vercel, usar `frontend` como Root Directory.
+
 La versión web conserva cada traza como un JSON privado en Supabase Storage, con estructura compatible con TinyDB. Storage no ejecuta TinyDB. El modelo local de objetos permanece en `bdoo`.
 
 Aplicación: https://ucab-consulta-ventas.vercel.app
